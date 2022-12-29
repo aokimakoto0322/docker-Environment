@@ -1,0 +1,22 @@
+version: '3'
+services:
+  nuxt:
+    build:
+      context: ./docker/nuxtjs
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:80:80
+    volumes:
+      - ./container/front/nuxtjs:/var/www/nuxtjs
+    tty: true
+    networks:
+      learning-network:
+        ipv4_address: 172.16.0.100
+      
+
+networks:
+  learning-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.0.0/16
