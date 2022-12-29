@@ -1,0 +1,3 @@
+[submodule "container/front/nuxtjs"]
+	path = container/front/nuxtjs
+	url = https://github.com/aokimakoto0322/nuxtjs.git
