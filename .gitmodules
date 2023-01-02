@@ -1,3 +1,6 @@
 [submodule "container/front/nuxtjs"]
 	path = container/front/nuxtjs
 	url = https://github.com/aokimakoto0322/nuxtjs.git
+[submodule "container/backend/laravel"]
+	path = container/backend/laravel
+	url = https://github.com/aokimakoto0322/laravel.git
